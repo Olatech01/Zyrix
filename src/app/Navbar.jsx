@@ -24,10 +24,16 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='flex items-center gap-4'>
-                <Search className='text-[#FFC107]'/>
-                <LanguagesIcon className='text-[#BDBDBD]'/>
-                <button className='bg-[#FFC107] text-[18px] font-medium w-[117px] h-[48px] rounded-[32px]'>Sign Up</button>
-                <button className='text-[18px] font-medium text-white border border-[#BDBDBD] w-[117px] h-[48px] rounded-[32px]'>Login</button>
+                <Search className='text-[#FFC107]' />
+                <LanguagesIcon className='text-[#BDBDBD]' />
+                <Link href={"/auth/signup"}>
+                    <button className='bg-[#FFC107] text-[18px] font-medium cursor-pointer w-[117px] h-[48px] rounded-[32px]'>
+                        Sign Up
+                    </button>
+                </Link>
+                <Link href={"/auth/login"}>
+                    <button className='text-[18px] font-medium text-white border border-[#BDBDBD] w-[117px] h-[48px] rounded-[32px]'>Login</button>
+                </Link>
             </div>
         </div>
     )
