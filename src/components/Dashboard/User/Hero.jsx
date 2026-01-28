@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import Chart from './Chart'
+import Market from './Market'
+import TransactionHistory from './TransactionHistory'
 
 const Hero = () => {
     const method = [
-        {name: "Complete Identity Verification", text: "Please Complete Advanced Identity Verification To Get Higher", icon: "/mail.svg", btn: "Verify Now"},
-        {name: "2-factor Authentication (2FA)", text: "Please Get Verifacation Code From Google Authenticator To Enable", icon: "/2fa.svg", btn: "Bid"},
-        {name: "Buy Crypto With One-click", text: "Buy Crypto With One-click", icon: "/buy.svg", btn: "Buy Crypto"},
+        { name: "Complete Identity Verification", text: "Please Complete Advanced Identity Verification To Get Higher", icon: "/mail.svg", btn: "Verify Now" },
+        { name: "2-factor Authentication (2FA)", text: "Please Get Verifacation Code From Google Authenticator To Enable", icon: "/2fa.svg", btn: "Bid" },
+        { name: "Buy Crypto With One-click", text: "Buy Crypto With One-click", icon: "/buy.svg", btn: "Buy Crypto" },
     ]
     return (
         <div className='flex flex-col gap-8'>
@@ -63,7 +65,7 @@ const Hero = () => {
                 <div className='grid grid-cols-3 gap-6'>
                     {method.map((item, index) => (
                         <div key={index} className='flex flex-col justify-center gap-2.5'>
-                            <Image height={50} width={50} src={item.icon} alt={item.name}/>
+                            <Image height={50} width={50} src={item.icon} alt={item.name} />
                             <h2 className='text-[#F5F5F5] text-[20px] font-medium'>
                                 {item.name}
                             </h2>
@@ -78,6 +80,8 @@ const Hero = () => {
                 </div>
             </div>
             <Chart />
+            <Market />
+            <TransactionHistory />
         </div>
     )
 }

@@ -16,10 +16,10 @@ const Sidebar = () => {
             name: "Wallet", icon: <Wallet size={20} />,
             subMenu : [
                 {
-                    name: "Asset", path: "/dashboard/wallet/asset", icon: <Coins size={18} />,
+                    name: "Asset", path: "/dashboard/assets", icon: <Coins size={18} />,
                 },
                 {
-                    name: "Deposit", path: "/dashboard/wallet/deposit", icon: <ArrowDownToLine size={18} />,
+                    name: "Deposit", path: "/dashboard/deposit", icon: <ArrowDownToLine size={18} />,
                 },
                 {
                     name: "Withdraw", path: "/dashboard/wallet/withdraw", icon: <ArrowUpFromLine size={18} />,
@@ -89,7 +89,7 @@ const Sidebar = () => {
                                                 <Link
                                                     key={subIndex}
                                                     href={subItem.path}
-                                                    className="flex items-center gap-3 px-4 py-2 rounded-lg text-neutral-300 hover:bg-yellow-400 hover:text-black transition-colors text-sm"
+                                                    className={`flex items-center gap-3 px-4 py-2 rounded-lg text-neutral-300 ${pathname === subItem.path ? "border-l bg-gradient from-[#FFCD39] to-[#FFC107] border-amber-300 rounded-[32px]" : ""} hover:bg-yellow-400 hover:text-black transition-colors text-sm`}
                                                 >
                                                     <span>{subItem.icon}</span>
                                                     <span>{subItem.name}</span>
@@ -101,7 +101,7 @@ const Sidebar = () => {
                             ) : (
                                 <Link
                                     href={item.path}
-                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white ${pathname === item.path ? "border-l bg-gradient from-[#FFCD39] to-[#FFC107] border-amber-300 rounded-[32px]" : ""} hover:text-black transition-colors font-medium`}
+                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white ${pathname === item.path ? "border-l bg-gradient from-[#FFCD39] to-[#FFC107] border-amber-300 rounded-[32px]" : ""} transition-colors font-medium`}
                                 >
                                     <span className="text-yellow-400 group-hover:text-black">{item.icon}</span>
                                     <span>{item.name}</span>

@@ -6,9 +6,9 @@ import React from 'react'
 const Navbar = () => {
     const menu = [
         { name: "Market", link: "/" },
-        { name: "Spot", link: "/about" },
-        { name: "Support", link: "/contact" },
-        { name: "Blog", link: "/contact" },
+        { name: "Spot", link: "/spot" },
+        { name: "Support", link: "/support" },
+        { name: "Blog", link: "/blog" },
 
     ]
     return (
