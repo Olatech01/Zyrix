@@ -22,7 +22,7 @@ const Sidebar = () => {
                     name: "Deposit", path: "/dashboard/deposit", icon: <ArrowDownToLine size={18} />,
                 },
                 {
-                    name: "Withdraw", path: "/dashboard/wallet/withdraw", icon: <ArrowUpFromLine size={18} />,
+                    name: "Withdraw", path: "/dashboard/withdraw", icon: <ArrowUpFromLine size={18} />,
                 },
             ]
         },
