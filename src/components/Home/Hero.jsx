@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='flex md:flex-row flex-col items-center md:justify-between  mt-8 w-full px-2.5 md:pl-[10rem]'>
+        <div className='flex md:flex-row flex-col items-center md:justify-between gap-4  mt-8 w-full px-2.5 md:pl-[10rem]'>
             <div className='flex flex-col gap-2'>
                 <h2 className='md:text-[70px] text-[40px] font-semibold text-[#F5F5F5] leading-12 md:leading-20'>
                     Trade, Invest, and Build <br className='hidden md:block'/> Your <span className='text-[#FFC107]'>Future</span>!
@@ -28,7 +28,7 @@ const Hero = () => {
                     </button>
                 </div>
             </div>
-            <Image src="/scan.svg" alt="Hero Image" width={520} height={606} />
+            <Image src="/scan.svg" alt="Hero Image" width={520} height={606} className='md:w-[520px] w-full'/>
         </div>
     )
 }
