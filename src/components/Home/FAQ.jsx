@@ -33,7 +33,7 @@ const FAQ = () => {
     };
 
     return (
-        <div className="min-h-screen p-4">
+        <div className="p-4">
             <div className=" mx-auto">
                 <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-medium mb-8 md:mb-12">
                     Frequently Asked <span className="text-[#FFC107]">Questions</span>

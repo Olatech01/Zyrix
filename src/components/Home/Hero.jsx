@@ -3,12 +3,12 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='flex items-center justify-between mt-8 w-full pl-[10rem]'>
+        <div className='flex md:flex-row flex-col items-center md:justify-between  mt-8 w-full px-2.5 md:pl-[10rem]'>
             <div className='flex flex-col gap-2'>
-                <h2 className='text-[70px] font-semibold text-[#F5F5F5] leading-20'>
-                    Trade, Invest, and Build <br /> Your <span className='text-[#FFC107]'>Future</span>!
+                <h2 className='md:text-[70px] text-[40px] font-semibold text-[#F5F5F5] leading-12 md:leading-20'>
+                    Trade, Invest, and Build <br className='hidden md:block'/> Your <span className='text-[#FFC107]'>Future</span>!
                 </h2>
-                <div className='flex gap-4 text-[#BDBDBD] font-medium text-[20px]'>
+                <div className='flex gap-4 text-[#BDBDBD] font-medium text-[16px] md:text-[20px]'>
                     <span>
                         Safe
                     </span>
