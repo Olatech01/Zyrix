@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='flex items-center justify-between px-20 py-6'>
             <div className='flex items-center gap-6'>
                 <Image src="/logo.svg" alt="Zyrix Logo" width={114} height={48} />
-                <div className='flex gap-4 text-[#BDBDBD] text-[18px] font-normal'>
+                <div className='flex gap-4 md:block hidden text-[#BDBDBD] text-[18px] font-normal'>
                     {menu.map((item, index) => (
                         <Link key={index} href={item.link}>
                             {item.name}
@@ -23,7 +23,7 @@ const Navbar = () => {
                     ))}
                 </div>
             </div>
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center md:block hidden gap-4'>
                 <Search className='text-[#FFC107]' />
                 <LanguagesIcon className='text-[#BDBDBD]' />
                 <Link href={"/auth/signup"}>
