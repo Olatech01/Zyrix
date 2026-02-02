@@ -28,9 +28,9 @@ const Crypto = () => {
                 <span className='text-[#FFC107]'>Powering</span> Your Crypto Journey
             </h2>
 
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-6 items-center mt-8'>
+            <div className='grid md:grid-cols-3 grid-cols-1 w-full gap-6 items-center mt-8'>
                 {data.map((item, index) => (
-                    <div key={index} className='flex bg-[#1C1C1C] rounded-[10px] md:h-[520px] min-h-[320px] md:p-4 px-4 py-6 flex-col justify-between'>
+                    <div key={index} className='flex bg-[#1C1C1C] rounded-[10px] md:h-[520px] w-full min-h-[320px] md:p-4 px-4 py-6 flex-col justify-between'>
                         <Image src={item.image} alt={item.name} width={326} height={344} />
                         <div>
                             <h3 className='text-[20px] font-semibold text-[#F5F5F5] mt-4'>
